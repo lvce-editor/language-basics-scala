@@ -1,0 +1,1 @@
+var b = BigDecimal(123_456.789)
