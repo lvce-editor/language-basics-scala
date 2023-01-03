@@ -1,0 +1,1 @@
+val sum = nums.reduceLeft(_ + _)
