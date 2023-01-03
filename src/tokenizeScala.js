@@ -28,6 +28,7 @@ export const TokenType = {
   Function: 11,
   LanguageConstant: 12,
   KeywordReturn: 13,
+  KeywordImport: 14,
 }
 
 export const TokenMap = {
@@ -45,6 +46,7 @@ export const TokenMap = {
   [TokenType.Function]: 'Function',
   [TokenType.LanguageConstant]: 'LanguageConstant',
   [TokenType.KeywordReturn]: 'KeywordReturn',
+  [TokenType.KeywordImport]: 'KeywordImport',
 }
 
 const RE_LINE_COMMENT = /^\/\/.*/s
@@ -104,6 +106,9 @@ export const tokenizeLine = (line, lineState) => {
               break
             case 'return':
               token = TokenType.KeywordReturn
+              break
+            case 'import':
+              token = TokenType.KeywordImport
               break
             default:
               token = TokenType.Keyword
