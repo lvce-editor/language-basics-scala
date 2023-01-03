@@ -1,0 +1,12 @@
+{
+  "id": "builtin.language-basics-scala",
+  "name": "Language Basics Scala",
+  "description": "Provides syntax highlighting and bracket matching in Scala files.",
+  "languages": [
+    {
+      "id": "scala",
+      "extensions": [".scala"],
+      "tokenize": "src/tokenizeScala.js"
+    }
+  ]
+}
