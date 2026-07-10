@@ -8,5 +8,6 @@
       "extensions": [".scala"],
       "tokenize": "src/tokenizeScala.js"
     }
-  ]
+  ],
+  "repository": "https://github.com/lvce-editor/language-basics-scala"
 }
