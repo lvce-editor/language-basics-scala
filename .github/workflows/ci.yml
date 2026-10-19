@@ -27,7 +27,7 @@ jobs:
         id: npm-cache
         with:
           path: '**/node_modules'
-          key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}-${{ hashFiles('.github/workflows/*.yml') }}
+          key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json', '.nvmrc') }}-${{ hashFiles('.github/workflows/*.yml') }}
           restore-keys: ${{ runner.os }}-node-
       - name: npm ci
         run: npm ci
